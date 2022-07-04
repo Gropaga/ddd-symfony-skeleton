@@ -2,46 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7529c78-d158-452e-865f-0477ee1e5886" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/logs/nginx/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/sites/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-fpm/wait-for-it.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Commands/CreateClientCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Commands/Handlers/CreateClientCommandHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Dto/BankAccountDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Dto/ClientDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Dto/NewBankAccountDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Dto/NewClientDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Factory/ClientDtoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Factory/ClientFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Services/CreateNewClientService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Services/DeleteClientBankAccountService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Services/DeleteClientService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Services/UpdateClientService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Rest/ClientController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/ClientController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/EditClientType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/NewBankAccountType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Deserializer/Deserialize.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bridge/Deserializer/DeserializeSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/BankAccount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/ClientRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/ClientDto.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewBankAccountDto.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewClientDto.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/DoctrineClientRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/BankAccount.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/Client.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/jms_serializer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Commands/CreateClientCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Commands/CreateClientCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Commands/Handlers/CreateClientCommandHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Commands/Handlers/CreateClientCommandHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Dto/BankAccountDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/BankAccountDto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Dto/ClientDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/ClientDto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Dto/NewBankAccountDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/NewBankAccountDto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Dto/NewClientDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/NewClientDto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Factory/ClientDtoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Factory/ClientDtoFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Factory/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Factory/ClientFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/CreateNewClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/CreateNewClientService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/DeleteClientBankAccountService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/DeleteClientBankAccountService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/DeleteClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/DeleteClientService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/UpdateClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/UpdateClientService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Rest/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Rest/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/EditClientType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/EditClientType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/NewBankAccountType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/NewBankAccountType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/NewClientType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/NewClientType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/client/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/client/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Deserializer/Deserialize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Deserializer/Deserialize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bridge/Deserializer/DeserializeSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Deserializer/DeserializeSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/BankAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/BankAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/ClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/ClientRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/ClientDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/ClientDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewBankAccountDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/NewBankAccountDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewClientDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/NewClientDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/DoctrineClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/DoctrineClientRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/BankAccount.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/BankAccount.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/Client.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/Client.orm.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,9 +230,11 @@
       <recent name="$PROJECT_DIR$/src/Application/Factory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping" />
+      <recent name="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/Banking" />
+      <recent name="$PROJECT_DIR$/src/Banking" />
       <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/landing_page" />
       <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">

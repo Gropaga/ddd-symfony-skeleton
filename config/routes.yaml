@@ -1,9 +1,9 @@
-controllersWeb:
-    resource: ../src/Bridge/Controller/Web
+controllersBankingWeb:
+    resource: ../src/Banking/Bridge/Controller/Web
     type: annotation
 
-controllersRest:
-    resource: ../src/Bridge/Controller/Rest
+controllersBankingRest:
+    resource: ../src/Banking/Bridge/Controller/Rest
     type: annotation
 
 kernel:

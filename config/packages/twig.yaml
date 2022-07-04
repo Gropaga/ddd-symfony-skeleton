@@ -2,7 +2,7 @@ twig:
     form_themes: ['bootstrap_5_layout.html.twig']
     default_path: '%kernel.project_dir%/templates'
     paths:
-        'src/Bridge/Controller/Web/templates': ~
+        'src/Banking/Bridge/Controller/Web/templates': ~
 
 when@test:
     twig:

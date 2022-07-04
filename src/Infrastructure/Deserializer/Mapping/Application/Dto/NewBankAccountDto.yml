@@ -1,9 +1,0 @@
-App\Application\Dto\NewBankAccountDto:
-  exclusion_policy: ALL
-
-  properties:
-    bic:
-      type: string
-
-    balance:
-      type: string

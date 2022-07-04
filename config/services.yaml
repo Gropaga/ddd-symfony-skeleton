@@ -22,15 +22,15 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    App\Bridge\Controller\Rest\:
-        resource: '../src/Bridge/Controller/Rest'
+    App\Banking\Bridge\Controller\Rest\:
+        resource: '../src/Banking/Bridge/Controller/Rest'
         tags: [ 'controller.service_arguments' ]
 
-    App\Bridge\Controller\Web\:
-        resource: '../src/Bridge/Controller/Web'
+    App\Banking\Bridge\Controller\Web\:
+        resource: '../src/Banking/Bridge/Controller/Web'
         tags: [ 'controller.service_arguments' ]
 
-    App\Application\Commands\Handlers\:
-        resource: '../src/Application/Commands/Handlers'
+    App\Banking\Application\Commands\Handlers\:
+        resource: '../src/Banking/Application/Commands/Handlers'
         tags:
             - { name: messenger.message_handler }

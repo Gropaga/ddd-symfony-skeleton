@@ -5,6 +5,6 @@ jms_serializer:
     metadata:
         auto_detection: false
         directories:
-            application:
-                namespace_prefix: "App\\Application\\Dto"
-                path: '%kernel.project_dir%/src/Infrastructure/Deserializer/Mapping/Application/Dto'
+            banking:
+                namespace_prefix: "App\\Banking\\Application\\Dto"
+                path: '%kernel.project_dir%/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto'
