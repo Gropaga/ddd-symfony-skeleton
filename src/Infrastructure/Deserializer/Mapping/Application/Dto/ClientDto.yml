@@ -1,0 +1,18 @@
+App\Application\Dto\ClientDto:
+  exclusion_policy: ALL
+
+  properties:
+    id:
+      type: string
+
+    name:
+      type: string
+
+    surname:
+      type: string
+
+    email:
+      type: string
+
+    bankAccounts:
+      type: array<App\Application\Dto\BankAccountDto>

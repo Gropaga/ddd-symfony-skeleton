@@ -1,0 +1,11 @@
+controllersWeb:
+    resource: ../src/Bridge/Controller/Web
+    type: annotation
+
+controllersRest:
+    resource: ../src/Bridge/Controller/Rest
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
