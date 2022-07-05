@@ -1,4 +1,4 @@
-App\Banking\Application\Dto\BankAccountDto:
+App\Users\Application\Dto\BankAccountDto:
   exclusion_policy: ALL
 
   properties:

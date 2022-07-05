@@ -6,6 +6,10 @@ controllersBankingRest:
     resource: ../src/Banking/Bridge/Controller/Rest
     type: annotation
 
+controllersUsersRest:
+    resource: ../src/Users/Bridge/Controllers
+    type: annotation
+
 kernel:
     resource: ../src/Kernel.php
     type: annotation

@@ -7,21 +7,10 @@ namespace App\Users\Infrastructure\Client;
 use App\Users\Domain\UsersClient;
 use GuzzleHttp\Client;
 
-final class GuzzleUsersClient implements UsersClient
+final class GuzzleUsersClientFactory
 {
-    private Client $guzzle;
-    private string $resource;
-
-    public function __construct(
-        Client $guzzle,
-        string $resource
-    ) {
-        $this->guzzle = $guzzle;
-        $this->resource = $resource;
-    }
-
-    public function getAllClients(): array
+    public function create(UserDtoFactory $userDtoFactory, string $resource): UsersClient
     {
-
+        return new GuzzleUsersClient(new Client(), $userDtoFactory, $resource);
     }
 }

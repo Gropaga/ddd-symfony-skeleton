@@ -34,3 +34,28 @@ services:
         resource: '../src/Banking/Application/Commands/Handlers'
         tags:
             - { name: messenger.message_handler }
+
+    # Users service configuration
+    App\Users\Bridge\Controllers\:
+        resource: '%kernel.project_dir%/src/Users/Bridge/Controllers'
+        tags: [ 'controller.service_arguments' ]
+
+    App\Users\Infrastructure\Client\GuzzleUsersClientFactory: ~
+
+    App\Users\Domain\UsersClient:
+        factory: [ '@App\Users\Infrastructure\Client\GuzzleUsersClientFactory', 'create' ]
+        arguments:
+            $resource: '%env(resolve:USERS_RESOURCE)%'
+
+    App\Users\Infrastructure\Client\LoggableGuzzleUsersClient:
+        decorates: App\Users\Domain\UsersClient
+        arguments:
+            $logPath: '%kernel.logs_dir%/user_response.log'
+
+    App\Users\Infrastructure\Notifier\BaseNotifierService:
+        arguments:
+            $notifierServices:
+                - '@App\Users\Infrastructure\Notifier\EmailNotifierService'
+                - '@App\Users\Infrastructure\Notifier\SmsNotifierService'
+
+    App\Users\Domain\NotifierService: '@App\Users\Infrastructure\Notifier\BaseNotifierService'

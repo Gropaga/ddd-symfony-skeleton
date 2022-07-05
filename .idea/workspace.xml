@@ -2,46 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7529c78-d158-452e-865f-0477ee1e5886" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Users/Application/SendNotificationToFirstUserService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Domain/Dto/UserDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Domain/Factory/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Domain/NotificationStatusEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Domain/NotifierService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Domain/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Client/LoggableGuzzleUsersClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Client/UserDtoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Deserializer/Mapping/Domain/Dto/UserDto.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Notifier/BaseNotifierService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Notifier/EmailNotifierService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Notifier/SmsNotifierService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony-skeleton.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-skeleton.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/jms_serializer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Commands/CreateClientCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Commands/CreateClientCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Commands/Handlers/CreateClientCommandHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Commands/Handlers/CreateClientCommandHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Dto/BankAccountDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/BankAccountDto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Dto/ClientDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/ClientDto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Dto/NewBankAccountDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/NewBankAccountDto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Dto/NewClientDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Dto/NewClientDto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Factory/ClientDtoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Factory/ClientDtoFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Factory/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Factory/ClientFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Services/CreateNewClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/CreateNewClientService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Services/DeleteClientBankAccountService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/DeleteClientBankAccountService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Services/DeleteClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/DeleteClientService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Services/UpdateClientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Application/Services/UpdateClientService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Rest/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Rest/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/EditClientType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/EditClientType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/NewBankAccountType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/NewBankAccountType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/Form/NewClientType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/Form/NewClientType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/client/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Controller/Web/templates/client/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Deserializer/Deserialize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Deserializer/Deserialize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Deserializer/DeserializeSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Bridge/Deserializer/DeserializeSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/BankAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/BankAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/ClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Domain/ClientRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/ClientDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/ClientDto.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewBankAccountDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/NewBankAccountDto.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Deserializer/Mapping/Application/Dto/NewClientDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/NewClientDto.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/DoctrineClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/DoctrineClientRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/BankAccount.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/BankAccount.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Mapping/Client.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/Client.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto/BankAccountDto.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Application/GetAllUsersService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Bridge/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Bridge/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Bridge/config/services.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Domain/UsersClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/UsersClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Client/GuzzleUsersClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Client/GuzzleUsersClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Client/GuzzleUsersClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Client/GuzzleUsersClientFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,6 +192,11 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid-doctrine" />
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/streams" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/ringphp" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
     </include_path>
   </component>
   <component name="ProjectId" id="2BAvS7gtw9Nvtyo9lPnlgBjuAxJ" />
@@ -217,24 +210,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Bridge/Controller/Web/Form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Users/Infrastructure/Notifier" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web/Form" />
-      <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web" />
-      <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/client" />
-      <recent name="$PROJECT_DIR$/src/Application/Services" />
-      <recent name="$PROJECT_DIR$/src/Application/Factory" />
+      <recent name="$PROJECT_DIR$/src/Users/Infrastructure/Notifier" />
+      <recent name="$PROJECT_DIR$/src/Users/Infrastructure" />
+      <recent name="$PROJECT_DIR$/src/Users/Domain/Dto" />
+      <recent name="$PROJECT_DIR$/src/Users/Bridge/config" />
+      <recent name="$PROJECT_DIR$/src/Users/Infrastructure/Client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Users/Infrastructure/Client" />
       <recent name="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping" />
       <recent name="$PROJECT_DIR$/src/Banking/Infrastructure/Persistence/Mapping/Banking" />
       <recent name="$PROJECT_DIR$/src/Banking" />
       <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web/templates/landing_page" />
-      <recent name="$PROJECT_DIR$/src/Bridge/Controller/Web" />
     </key>
   </component>
   <component name="RunManager">
@@ -257,16 +250,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/vendor/jms/serializer/src/SerializerInterface.php</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
