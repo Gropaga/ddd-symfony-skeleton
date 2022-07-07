@@ -9,7 +9,7 @@ use GuzzleHttp\Client;
 
 final class GuzzleUsersClientFactory
 {
-    public function create(UserDtoFactory $userDtoFactory, string $resource): UsersClient
+    public function create(JmsUserDtoFactory $userDtoFactory, string $resource): UsersClient
     {
         return new GuzzleUsersClient(new Client(), $userDtoFactory, $resource);
     }

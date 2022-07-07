@@ -6,18 +6,17 @@ namespace App\Users\Infrastructure\Client;
 
 use App\Users\Domain\Dto\UserDto;
 use App\Users\Domain\UsersClient;
-use GuzzleHttp\Client;
-use JMS\Serializer\SerializerInterface;
+use GuzzleHttp\ClientInterface;
 use RuntimeException;
 
 final class GuzzleUsersClient implements UsersClient
 {
-    private Client $guzzle;
+    private ClientInterface $guzzle;
     private UserDtoFactory $dtoFactory;
     private string $resource;
 
     public function __construct(
-        Client $guzzle,
+        ClientInterface $guzzle,
         UserDtoFactory $dtoFactory,
         string $resource
     ) {
