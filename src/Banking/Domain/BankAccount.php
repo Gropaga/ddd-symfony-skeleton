@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Banking\Domain;
 
+use Decimal\Decimal;
 use Ramsey\Uuid\UuidInterface;
 
 final class BankAccount
@@ -12,7 +13,7 @@ final class BankAccount
 
     public function __construct(
         private string $bic,
-        private string $balance
+        private Decimal $balance
     ) {}
 
     public function id(): UuidInterface
@@ -25,7 +26,7 @@ final class BankAccount
         return $this->bic;
     }
 
-    public function balance(): string
+    public function balance(): Decimal
     {
         return $this->balance;
     }

@@ -10,7 +10,7 @@ use App\Banking\Application\Dto\NewClientDto;
 use App\Banking\Application\Factory\ClientDtoFactory;
 use App\Banking\Application\Services\DeleteClientBankAccountService;
 use App\Banking\Application\Services\DeleteClientService;
-use App\Banking\Bridge\Deserializer\Deserialize;
+use App\Common\Deserializer\Deserialize;
 use App\Banking\Domain\ClientRepository;
 use JMS\Serializer\SerializerInterface;
 use Nelmio\ApiDocBundle\Annotation\Model;

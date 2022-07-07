@@ -9,4 +9,4 @@ App\Users\Application\Dto\BankAccountDto:
       type: string
 
     balance:
-      type: string
+      type: Decimal

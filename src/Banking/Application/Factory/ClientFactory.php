@@ -8,6 +8,7 @@ use App\Banking\Application\Dto\NewBankAccountDto;
 use App\Banking\Application\Dto\NewClientDto;
 use App\Banking\Domain\BankAccount;
 use App\Banking\Domain\Client;
+use Decimal\Decimal;
 
 final class ClientFactory
 {
@@ -25,7 +26,7 @@ final class ClientFactory
             foreach ($bankAccounts as $bankAccount) {
                 $client->addBankAccount(new BankAccount(
                     $bankAccount->bic,
-                    $bankAccount->balance,
+                    $bankAccount->balance
                 ));
             }
         }

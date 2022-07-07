@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Banking\Bridge\Deserializer;
+namespace App\Common\Deserializer;
 
 use JMS\Serializer\SerializerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;

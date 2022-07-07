@@ -6,4 +6,4 @@ App\Banking\Application\Dto\NewBankAccountDto:
       type: string
 
     balance:
-      type: string
+      type: Decimal
