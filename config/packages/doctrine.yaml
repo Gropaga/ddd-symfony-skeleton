@@ -1,7 +1,8 @@
 doctrine:
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
-
+        types:
+            decimal_decimal:  App\SensorReading\Infrastructure\Persistence\Type\DecimalType
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '13'
@@ -10,11 +11,11 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            Banking:
+            sensor_reading:
                 is_bundle: false
-                dir: '%kernel.project_dir%/src/Banking/Infrastructure/Persistence/Mapping'
+                dir: '%kernel.project_dir%/src/SensorReading/Infrastructure/Persistence/Mapping'
                 type: xml
-                prefix: 'App\Banking\Domain'
+                prefix: 'App\SensorReading\Domain'
 
 when@test:
     doctrine:

@@ -22,40 +22,20 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    App\Banking\Bridge\Controller\Rest\:
-        resource: '../src/Banking/Bridge/Controller/Rest'
+    App\SensorReading\Bridge\Controller\Rest\:
+        resource: '../src/SensorReading/Bridge/Controller/Rest'
         tags: [ 'controller.service_arguments' ]
 
-    App\Banking\Bridge\Controller\Web\:
-        resource: '../src/Banking/Bridge/Controller/Web'
+    App\SensorReading\Bridge\Controller\Web\:
+        resource: '../src/SensorReading/Bridge/Controller/Web'
         tags: [ 'controller.service_arguments' ]
 
-    App\Banking\Application\Commands\Handlers\:
-        resource: '../src/Banking/Application/Commands/Handlers'
+    App\SensorReading\Application\Command\Handlers\:
+        resource: '../src/SensorReading/Application/Command/Handlers'
         tags:
             - { name: messenger.message_handler }
 
-    # Users service configuration
-    App\Users\Bridge\Controllers\:
-        resource: '%kernel.project_dir%/src/Users/Bridge/Controllers'
-        tags: [ 'controller.service_arguments' ]
+    App\SensorReading\Infrastructure\Client\GuzzleSensorReadingsApiClientFactory: ~
 
-    App\Users\Infrastructure\Client\GuzzleUsersClientFactory: ~
-
-    App\Users\Domain\UsersClient:
-        factory: [ '@App\Users\Infrastructure\Client\GuzzleUsersClientFactory', 'create' ]
-        arguments:
-            $resource: '%env(resolve:USERS_RESOURCE)%'
-
-    App\Users\Infrastructure\Client\LoggableGuzzleUsersClient:
-        decorates: App\Users\Domain\UsersClient
-        arguments:
-            $logPath: '%kernel.logs_dir%/user_response.log'
-
-    App\Users\Infrastructure\Notifier\BaseNotifierService:
-        arguments:
-            $notifierServices:
-                - '@App\Users\Infrastructure\Notifier\EmailNotifierService'
-                - '@App\Users\Infrastructure\Notifier\SmsNotifierService'
-
-    App\Users\Domain\NotifierService: '@App\Users\Infrastructure\Notifier\BaseNotifierService'
+    App\SensorReading\Domain\SensorReadingsApiClient:
+        factory: [ '@App\SensorReading\Infrastructure\Client\GuzzleSensorReadingsApiClientFactory', 'create' ]

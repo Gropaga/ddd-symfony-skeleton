@@ -1,13 +1,9 @@
-controllersBankingWeb:
-    resource: ../src/Banking/Bridge/Controller/Web
+controllersSensorReadingsWeb:
+    resource: ../src/SensorReading/Bridge/Controller/Web
     type: annotation
 
-controllersBankingRest:
-    resource: ../src/Banking/Bridge/Controller/Rest
-    type: annotation
-
-controllersUsersRest:
-    resource: ../src/Users/Bridge/Controllers
+controllersSensorReadingsRest:
+    resource: ../src/SensorReading/Bridge/Controller/Rest
     type: annotation
 
 kernel:

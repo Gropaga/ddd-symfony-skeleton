@@ -7,10 +7,6 @@ jms_serializer:
     metadata:
         auto_detection: false
         directories:
-            banking:
-                namespace_prefix: "App\\Banking\\Application\\Dto"
-                path: '%kernel.project_dir%/src/Banking/Infrastructure/Deserializer/Mapping/Application/Dto'
-
-            users:
-                namespace_prefix: "App\\Users\\Domain\\Dto"
-                path: '%kernel.project_dir%/src/Users/Infrastructure/Deserializer/Mapping/Domain/Dto'
+#            sensor_readings:
+#                namespace_prefix: "App\\SensorReading\\Application\\Dto"
+#                path: '%kernel.project_dir%/src/SensorReading/Infrastructure/Deserializer/Mapping/Application/Dto'
